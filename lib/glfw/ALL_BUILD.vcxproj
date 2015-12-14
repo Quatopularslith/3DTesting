@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D5C173AD-40E8-3C63-A6DD-A5BE57E00473}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Users\Razim\Desktop\Triangle - Copy\cmake\bin\cmake.exe" "-HC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" "-BC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" --check-stamp-file "C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindThreads.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.c.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakePackageConfigHelpers.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3Config.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\docs\Doxyfile.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw_config.h.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3.pc.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\cmake_uninstall.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Users\Razim\Desktop\Triangle - Copy\cmake\bin\cmake.exe" "-HC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" "-BC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" --check-stamp-file "C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindThreads.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.c.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakePackageConfigHelpers.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3Config.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\docs\Doxyfile.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw_config.h.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3.pc.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\cmake_uninstall.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Users\Razim\Desktop\Triangle - Copy\cmake\bin\cmake.exe" "-HC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" "-BC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" --check-stamp-file "C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindThreads.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.c.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakePackageConfigHelpers.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3Config.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\docs\Doxyfile.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw_config.h.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3.pc.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\cmake_uninstall.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Users\Razim\Desktop\Triangle - Copy\cmake\bin\cmake.exe" "-HC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" "-BC:/Users/Razim/Desktop/Triangle - Copy/cpp3d" --check-stamp-file "C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindThreads.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CheckIncludeFile.c.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakePackageConfigHelpers.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3Config.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cmake\share\cmake-3.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\docs\Doxyfile.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw_config.h.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\src\glfw3.pc.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\cmake_uninstall.cmake.in;C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Razim\Desktop\Triangle - Copy\cpp3d\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/ZERO_CHECK.vcxproj">
+      <Project>F9F8009B-86CC-3EDD-A886-A7EFDD1F4EF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/boing.vcxproj">
+      <Project>736B021A-74AA-3947-AE98-E41BD6A8EFB4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/clipboard.vcxproj">
+      <Project>CE279E8A-D3FE-3B22-868B-EBF060B58A38</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/cursor.vcxproj">
+      <Project>2EC07513-9B08-3759-9285-BDCB80EB1840</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/empty.vcxproj">
+      <Project>076ED74F-DB7B-38BE-9246-20385AC39BCA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/events.vcxproj">
+      <Project>A728715A-85E6-394E-9818-77ED59F683A0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/gamma.vcxproj">
+      <Project>32EF2574-C197-3BDF-BB2B-2D2AD5EDDEE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/gears.vcxproj">
+      <Project>9E949EE7-8362-3C06-BBDC-9CB584D7E51A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/src/glfw.vcxproj">
+      <Project>2789E7CE-329B-3886-B501-1F77BA50137D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/glfwinfo.vcxproj">
+      <Project>9513C52D-CDEF-392F-9AF0-BABAD3C4233C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/heightmap.vcxproj">
+      <Project>631EAB27-71F7-34F6-86F1-F739A6DCF144</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/iconify.vcxproj">
+      <Project>F23B5A74-A484-3271-AAD3-4A25A27B6956</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/joysticks.vcxproj">
+      <Project>B430E41D-0836-31D7-9869-91516BD591EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/monitors.vcxproj">
+      <Project>7449EB44-75E6-34C2-90DD-4B430E70FD58</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/msaa.vcxproj">
+      <Project>D3D5718E-406B-35AC-94FF-EBFED37DDE4A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/particles.vcxproj">
+      <Project>CE435560-46EB-3419-A3B8-2F622AA910D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/reopen.vcxproj">
+      <Project>1E0D81F4-A4EF-34E7-829B-D850967B6C55</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/sharing.vcxproj">
+      <Project>D8D14475-5D34-38CC-9A29-5C0ED46CDCFB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/simple.vcxproj">
+      <Project>AB1AD549-A267-3B56-8597-09085227A77D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/splitview.vcxproj">
+      <Project>E7E32E08-1E2A-36F0-B5B1-B5C5C453E2BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/tearing.vcxproj">
+      <Project>DE1B2862-9DC6-3B1E-8261-700C2EF74BC8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/threads.vcxproj">
+      <Project>8A77C371-89D7-3222-BFD4-67CA8914C8E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/title.vcxproj">
+      <Project>EE543351-506D-32B0-AD7C-2420C668CD9F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/examples/wave.vcxproj">
+      <Project>2B7AE712-DCC1-3C77-A774-EB0C25D0EE79</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Razim/Desktop/Triangle - Copy/cpp3d/lib/glfw/tests/windows.vcxproj">
+      <Project>D486C678-9278-3B26-B599-30B9D786DD77</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
